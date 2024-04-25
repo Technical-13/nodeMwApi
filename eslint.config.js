@@ -15,6 +15,17 @@ module.exports = [
     rules: {
       "prefer-const": "off",
       "no-console": "off",
+      // https://eslint.org/docs/latest/rules/no-unused-vars
+      "no-unused-vars": [
+        "error",
+        {
+          vars: "all",
+          args: "after-used",
+          caughtErrors: "none", // ignore catch block variables
+          ignoreRestSiblings: false,
+          reportUsedIgnorePattern: false,
+        },
+      ],
     },
   },
   {
