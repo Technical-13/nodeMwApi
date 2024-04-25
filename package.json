@@ -50,6 +50,7 @@
     "lint": "eslint --cache .",
     "lint:fix": "eslint --fix .",
     "check-dts": "npx check-dts lib/*.d.ts",
-    "prettier": "npx prettier --write ."
+    "prettier": "npx prettier --write .",
+    "check-dependencies": "npx depcheck"
   }
 }
