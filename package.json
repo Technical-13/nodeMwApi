@@ -37,6 +37,7 @@
     "@jest/globals": "^29.0.0",
     "check-dts": "^0.7.0",
     "csv-string": "^4.0.1",
+    "depcheck": "^1.4.7",
     "eslint": "^9.1.1",
     "eslint-config-prettier": "^9.0.0",
     "globals": "^15.0.0",
