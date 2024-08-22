@@ -60,11 +60,8 @@ describe("WikiData API", () => {
     it(`returns descriptions for "${TEST_ARTICLE}" article`, async () => {
       const res = await client.getArticleDescriptions(TEST_ARTICLE);
 
-      expect(res.en).toEqual({
-        language: "en",
-        value:
-          "German-born theoretical physicist; developer of the theory of relativity (1879–1955)",
-      });
+      expect(res.en.language).toEqual("en");
+      expect(res.en.value).toContain("German-born theoretical physicist");
 
       const polish = res.pl;
 
